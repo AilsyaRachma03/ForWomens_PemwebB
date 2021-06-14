@@ -30,23 +30,23 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Pengaduan </a>
+        <a class="navbar-brand" href="#">Report Violance </a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="L_Landing.php">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="L_Landing.php">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="L_Landing.php">Kontak</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_TambahPengaduan_P.php">Pengaduan</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Profil</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../controller/c_Plogout.php">Keluar</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Service</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_TambahPengaduan_P.php">Report</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../controller/Log-Out.php">Log-Out</a></li>
                     </ul>
                 </ul>
             </div>
         </nav>
     <br>
-    <h1> &nbsp; &nbsp; &nbsp;Pengaduan</h1>
+    <h1> &nbsp; &nbsp; &nbsp;Report Form</h1>
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!-- Sidebar -->
