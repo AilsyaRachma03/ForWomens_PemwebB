@@ -127,7 +127,7 @@
                                         <td><?php echo $data['file']; ?></td>
 
                                         <td>
-                                          <a class="btn text-white" href="ubah.php?id=<?php echo $data['ID']; ?>">Ubah</a>
+                                          <a class="btn text-white" href="v_ubahPengaduan.php?id=<?php echo $data['id']; ?>">Ubah</a>
                                         </td>
 
                                         <td>
