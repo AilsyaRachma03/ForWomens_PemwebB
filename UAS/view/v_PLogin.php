@@ -84,7 +84,7 @@ if(isset($_POST['login']))
       </li>
     </ul>
     
-    <a class="navbar-brand h4 mb-1 text-white" href="#" align="right">For Womens</a>
+    <a class="navbar-brand h4 mb-1 text-white" href="#" align="right"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
   </div>
 </nav>
 
@@ -138,6 +138,11 @@ if(isset($_POST['login']))
 
       </form>
     </div>
+  </div>
+  <div class="px-2 bg-transparan ">
+    <marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="15">
+      Welcome to our website Girls! Please register your account to enjoy our services. Be the strong women and join with us to against crime and violances!
+    </marquee>
   </div>
 </body>
 </html>

@@ -42,7 +42,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div id="logo">
-        <a href="index.html"><img src="asset/img/logo.png" alt=""></a>
+        <a href="index.html"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="index.html">Regna</a></h1>-->
       </div>

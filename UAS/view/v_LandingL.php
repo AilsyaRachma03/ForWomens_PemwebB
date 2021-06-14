@@ -42,7 +42,7 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div id="logo">
-        <a href="index.html"><img src="asset/img/logo.png" alt=""></a>
+        <a href="index.html"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="index.html">Regna</a></h1>-->
       </div>
@@ -65,13 +65,12 @@
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Welcome to For Women</h1>
-      <h2>We stand for the women!</h2>
-      <!-- <a href="v_PLogin.php" class="btn-get-started">Login</a>
-      <p class="text-white">Belum punya akun ? <a href="v_PReg.php">Daftar</a></p> -->
+      <h2>Jangan khawatir dimanapun kamu berada. Jika situasi tidak diinginkan terjadi, buat aduanmu sekarang!</h2>
+      <p class="text-white">Masih bingung cara kerjanya ? Ikuti tutorialnya yuk</p>
+      <a href="#portfolio" class="btn-get-started">Tutorial</a>
+      
     </div>
-  </section>
-  
-  <!-- End Hero Section -->
+  </section><!-- End Hero Section -->
 
   <main id="main">
 
@@ -184,6 +183,45 @@
       </div>
     </section><!-- End Services Section -->
 
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Tutorial</h3>
+          <p class="section-description">Jangan bingung, kita bantuin kok</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="asset/img/portfolio/tutorial1.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Langkah pertama</h4>
+              <p>Pilih menu "Report" di pojok kanan atas halaman ini</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="asset/img/portfolio/tutorial2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Langkah kedua</h4>
+              <p>Lengkapi isi formulir, tambahkan file bukti apabila ada</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="asset/img/portfolio/tutorial3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Langkah terakhir</h4>
+              <p>Klik tombol "Adukan", dan selesai!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
       <!-- Uncomment below if you wan to use dynamic maps -->
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -248,6 +286,7 @@
 
       </div>
     </section><!-- End Contact Section -->
+    
 
   </main><!-- End #main -->
 
