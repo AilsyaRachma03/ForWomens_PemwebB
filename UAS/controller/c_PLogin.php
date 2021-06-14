@@ -1,5 +1,4 @@
 <?php 
-// include('../modal/m_pengguna.php');
 class database{
 	var $host = "localhost";
 	var $username = "root";
@@ -25,7 +24,6 @@ class database{
 			}
 			$_SESSION['email'] = $email;
 			$_SESSION['nama'] = $data_pengguna ['nama'];
-			// $_SESSION['no_telp'] = $data_pengguna ['no_telp'];
 			$_SESSION['is_login'] = TRUE;
 			return TRUE;
 		}

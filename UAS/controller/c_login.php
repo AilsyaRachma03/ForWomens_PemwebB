@@ -10,14 +10,7 @@ class database{
 	function __construct(){
 		$this->koneksi = mysqli_connect($this->host, $this->username, $this->password,$this->database);
 	}
-
-
-	// function register($password,$nama, $no_telp, $bidang, $email)
-	// {	
-	// 	$insert = mysqli_query($this->koneksi,"insert into admin values ('','$email','$password','$nama', '$no_telp', '$bidang')");
-	// 	return $insert;
-	// }
-
+	
 	function login($email,$password,$remember)
 	{
 		$query = mysqli_query($this->koneksi,"select * from admin where email='$email'");

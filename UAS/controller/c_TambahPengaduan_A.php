@@ -17,6 +17,5 @@
 
                   move_uploaded_file($source, $folder.$nama_file);
                   $insert =mysqli_query($con, "INSERT INTO aduan VALUES(NULL, '$nama', '$email', '$alamat', '$keluhan', '$telp','$kelamin', '$jenis', '$nama_file')");
-                //   echo "Data Berhasil Ditambahkan";
                 }
 ?>

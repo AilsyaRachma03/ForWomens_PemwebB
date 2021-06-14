@@ -8,24 +8,19 @@ class Paginator {
        private $_total;
 
 }
-
-
 public function __construct( $conn, $query ) {
      
     $this->_conn = $conn;
     $this->_query = $query;
  
     $rs= $this->_conn->query( $this->_query );
-    $this->_total = $rs->num_rows;
-     
+    $this->_total = $rs->num_rows;   
 }
 
 
-public function getData( $limit = 10, $page = 1 ) {
-     
+public function getData( $limit = 10, $page = 1 ) {  
     $this->_limit   = $limit;
     $this->_page    = $page;
- 
     if ( $this->_limit == 'all' ) {
         $query      = $this->_query;
     } else {
@@ -36,7 +31,6 @@ public function getData( $limit = 10, $page = 1 ) {
     while ( $row = $rs->fetch_assoc() ) {
         $results[]  = $row;
     }
- 
     $result         = new stdClass();
     $result->page   = $this->_page;
     $result->limit  = $this->_limit;

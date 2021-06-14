@@ -1,5 +1,4 @@
 <?php 
-// include('../modal/m_admin.php');
 class database{
 	var $host = "localhost";
 	var $username = "root";
