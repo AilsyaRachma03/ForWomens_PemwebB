@@ -66,10 +66,12 @@
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Welcome to For Women</h1>
       <h2>We stand for the women!</h2>
-      <a href="v_PLogin.php" class="btn-get-started">Login</a>
-      <p class="text-white">Belum punya akun ? <a href="v_PReg.php">Daftar</a></p>
+      <!-- <a href="v_PLogin.php" class="btn-get-started">Login</a>
+      <p class="text-white">Belum punya akun ? <a href="v_PReg.php">Daftar</a></p> -->
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+  
+  <!-- End Hero Section -->
 
   <main id="main">
 
