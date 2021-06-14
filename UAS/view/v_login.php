@@ -50,7 +50,6 @@ if(isset($_POST['login']))
 <style>
     body{
       background: linear-gradient(to right, #4b778d, #28b5b5, #8fd9a8,#d2e69c); 
-      /* background-color: #ff959f; */
     }
 
     nav{

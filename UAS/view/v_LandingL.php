@@ -10,7 +10,6 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="asset/img/favicon.png" rel="icon"> -->
   <link href="asset/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -43,8 +42,6 @@
 
       <div id="logo">
         <a href="index.html"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="index.html">Regna</a></h1>-->
       </div>
 
       <nav id="navbar" class="navbar">

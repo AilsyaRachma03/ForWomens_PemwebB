@@ -49,7 +49,6 @@ if(isset($_POST['login']))
   <style>
     body{
       background: linear-gradient(to right, #683b58, #9d587a, #e980a4,#f6adc5 ); 
-      /* background-color: #ff959f; */
     }
 
     nav{
@@ -134,7 +133,6 @@ if(isset($_POST['login']))
 
         <!-- BUTTON   -->
         <button class="btn btn-lg btn btn-danger btn-block" type="submit" name="login">Masuk</button>
-        <!-- <a href="register.php" class="btn btn-lg btn-warning btn-block" > Daftar</a> -->
       </form>
 
         <!-- TEXT   -->   

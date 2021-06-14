@@ -29,7 +29,6 @@ if(isset($_POST['register']))
 <style>
     body{
       background: linear-gradient(to right, #683b58, #9d587a, #e980a4,#f6adc5 ); 
-      /* background-color: #ff959f; */
     }
 
     nav{
@@ -104,7 +103,6 @@ if(isset($_POST['register']))
             </div>
           </div>
 
-        <!-- class="form-checkbox" -->
         <!-- Check Pw -->
         <div style="margin-left:30px;">
           <p> <input type="checkbox" class="form-checkbox">&nbsp; Tampilkan Password</p>
@@ -126,10 +124,10 @@ if(isset($_POST['register']))
         <div class="form-group">
           <div class="col-sm-10">
           <button type="submit" class="btn btn-danger btn-block" name="register">Daftar</button>
-            <!-- <a href="v_login.php" class="btn btn-warning btn-block">Masuk</a> -->
           </div>
         </div>
     </form>
+
         <!-- TEXT   -->   
         <div class="px-2 bg-transparan ">
         <marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10" behavior="alternate">

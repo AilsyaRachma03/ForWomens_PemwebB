@@ -26,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="asset/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: Regna - v4.3.0
   * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -36,15 +35,12 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div id="logo">
         <a href="index.html"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!--<h1><a href="index.html">Regna</a></h1>-->
       </div>
 
       <nav id="navbar" class="navbar">
@@ -139,9 +135,6 @@
             <span data-purecounter-start="0" data-purecounter-end="2134" data-purecounter-duration="1" class="purecounter"></span>
             <p>Gender based cases</p>
           </div>
-
-
-
         </div>
 
       </div>
@@ -286,5 +279,4 @@
   <script src="asset/js/main.js"></script>
 
 </body>
-
 </html>

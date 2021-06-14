@@ -13,7 +13,6 @@ if(isset($_POST['register']))
       header('location:v_login.php');
     }
 }
-
 ?>
 
 <!-- UI  -->
@@ -21,8 +20,6 @@ if(isset($_POST['register']))
 <html lang="en" class="h-100">
   <head>
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <!-- <meta name="description" content=""> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar | Admin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -33,7 +30,6 @@ if(isset($_POST['register']))
 <style>
     body{
       background: linear-gradient(to right, #4b778d, #28b5b5, #8fd9a8,#d2e69c); 
-      /* background-color: #ff959f; */
     }
 
     nav{
@@ -68,7 +64,6 @@ if(isset($_POST['register']))
     <!-- Container  -->
   
   <div class="container py-5">
-  <!-- class="mt-5" -->
     <h1 >Daftar</h1>
     <p class="lead">Daftarkan Identitas Anda</p>
     <hr/>
@@ -122,7 +117,6 @@ if(isset($_POST['register']))
             </div>
           </div>
 
-        <!-- class="form-checkbox" -->
         <!-- Check Pw -->
         <div style="margin-left:30px;">
           <p> <input type="checkbox" class="form-checkbox">&nbsp; Tampilkan Password</p>
@@ -153,8 +147,5 @@ if(isset($_POST['register']))
    </div>
   </div>
 </div>
-<!-- </main> -->
-
-<!-- class="col-sm-2 col-form-label" -->
 </body>
 </html>
