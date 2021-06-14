@@ -1,5 +1,5 @@
 <?php
-    include('../controller/c_TambahPengaduan_P.php');
+    include('../controller/c_TambahPengaduan_A.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,32 +21,38 @@
 
     <!-- Custom styles for this template-->
     <link href="view/../css/sb-admin-2.min.css" rel="stylesheet">
-
+    <style>
+        nav{
+            background: linear-gradient(to right,#206a5d, #16a596);      
+        }
+        .btn{
+            background: #28b5b5;
+        }
+    </style>
 </head>
 
 <body id="page-top">
         <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Report Violance </a>
+        <a class="navbar-brand text-white" href="#">FOR WOMENS</a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Service</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_LandingL.php">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="v_TambahPengaduan_P.php">Report</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../controller/Log-Out.php">Log-Out</a></li>
-                    </ul>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="../view/v_home.php">Dashboard<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="v_AdminPengaduan.php">Kembali<span class="sr-only">(current)</span></a>
+                    </li>
                 </ul>
             </div>
         </nav>
     <br>
-    <h1> &nbsp; &nbsp; &nbsp;Report Form</h1>
+    <!-- <h1> &nbsp; &nbsp; &nbsp;Report Form</h1> -->
+    <h1 class="text-center">Buat Pengaduan Sebagai Admin</h1>
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -67,7 +73,7 @@
 
                 <!-- FORM  -->
                 <div class="container-fluid">
-                  <form action="v_TambahPengaduan_P.php" method="POST" enctype="multipart/form-data">
+                  <form action="v_TambahPengaduan_A.php" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama Lengkap</label>
                         <input type="text" name="nama" required="" class="form-control" placeholder="Nama Lengkap">
@@ -140,7 +146,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; 192410101007 Website 2021</span>
+                        <span>Copyright &copy; For Womens Website 2021</span>
                     </div>
                 </div>
             </footer>

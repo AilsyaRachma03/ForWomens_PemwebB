@@ -15,7 +15,7 @@ class database{
 	{
 		$query = mysqli_query($this->koneksi,"select * from pengguna where email='$email'");
 		$data_pengguna = $query->fetch_array();
-		if(password_verify($password,$data_pengguna ['password']))
+		if(password_verify($password,$data_pengguna['password']))
 		{
 			
 			if($remember)

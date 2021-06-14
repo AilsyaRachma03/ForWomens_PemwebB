@@ -77,7 +77,7 @@
                 <!-- Page Heading -->
                     <br>
                     <!-- <h1 class="h3 mb-2 text-gray-800">Tables</h1> -->
-                    <a class="btn btn-primary" href="tambah.php">Tambah Data</a>
+                    <a class="btn btn-primary" href="v_TambahPengaduan_A.php">Tambah Data</a>
 
                     <br>
                     <br>
