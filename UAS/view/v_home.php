@@ -1,4 +1,3 @@
-
 <?php 
 session_start();
 if(! isset($_SESSION['is_login']))
@@ -15,10 +14,20 @@ if(! isset($_SESSION['is_login']))
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title><?php echo $_SESSION['nama']; ?> </title>
+        <title>Admin | <?php echo $_SESSION['nama']; ?> </title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+<style>
+    body{
+      background: linear-gradient(to right,#d2e69c,#8fd9a8, #28b5b5, #4b778d ); 
+    }
+
+    nav{
+      background: linear-gradient(to right,#206a5d, #16a596);      
+    }
+</style>
     </head>
 
 
@@ -26,7 +35,7 @@ if(! isset($_SESSION['is_login']))
         <!-- NAVIGATION -->
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand ps-3" href="index.html">FOR WOMENS | ADMIN</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -59,34 +68,34 @@ if(! isset($_SESSION['is_login']))
 <!-- NAVBAR -->
 <!-- DASHBOARD -->
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading text-white">FOR WOMENS</div>
                             <a class="nav-link" href="v_home.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
 <!-- PENGADUAN -->
-                            <div class="sb-sidenav-menu-heading">Tabel Informasi Admin</div>
+                            <div class="sb-sidenav-menu-heading text-white">Tabel Informasi Admin</div>
                             <a class="nav-link " href="../viewAdmin/v_AdminPengaduan.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Pengaduan 
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
 <!-- PENGGUNA -->
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link " href="../viewAdmin/v_DataPengguna.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Pengguna
+                                Pengguna 
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
 <!-- ADMIN -->
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <a class="nav-link " href="../viewAdmin/v_DataAdmin.php">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Admin
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-
+<!-- ADMIN -->
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
+                                Pesan
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -126,9 +135,9 @@ if(! isset($_SESSION['is_login']))
                                 </a>
                             </div> -->
                     </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                    <div class="sb-sidenav-footer bg-warning text-white">
+                        <div class="small">Logged in Admin as:</div>
+                        Hallo, <?php echo $_SESSION['nama']; ?> 
                     </div>
                 </nav>
             </div>
@@ -204,11 +213,11 @@ if(! isset($_SESSION['is_login']))
                 </main>
 
 
-
+<!-- FOOTER -->
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div class="text-muted">Copyright &copy; For Womens Website 2021</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;

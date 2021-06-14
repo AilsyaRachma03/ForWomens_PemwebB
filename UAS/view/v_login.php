@@ -78,9 +78,6 @@ if(isset($_POST['login']))
       <li class="nav-item active">
         <a class="nav-link text-white" href="v_register.php">Daftar <span class="sr-only">(current)</span></a>
       </li>
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#" > Banyak Tugas ? <span class="sr-only">(current)</span></a>
-        </li> -->
     </ul>
 
   </div>

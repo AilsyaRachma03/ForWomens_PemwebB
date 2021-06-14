@@ -59,10 +59,10 @@ if(isset($_POST['register']))
         <a class="nav-link  text-white" href="v_PReg.php">Daftar <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link  text-white" href="B_Landing.php">Beranda <span class="sr-only">(current)</span></a>
+        <a class="nav-link  text-white" href="v_LandingB.php">Beranda <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-
+    <a class="navbar-brand h4 mb-1 text-white" href="#" align="right">For Womens</a>
   </div>
 </nav>
 

@@ -1,4 +1,4 @@
-<?php
+<?php 
     include('../modal/m_dbPengaduan.php');
 ?>
 <!DOCTYPE html>
@@ -12,38 +12,36 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin | Data Pengaduan</title>
+    <title>Admin | Data Pengguna</title>
 
-   <!-- Custom fonts for this template -->
-   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom fonts for this template -->
+    <link href="uts/../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="uts/../css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="uts/../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <style>
+        
         #kolom{
             background: linear-gradient(to right,#d2e69c,#8fd9a8, #28b5b5, #4b778d ); 
-            /* background-color: #ff959f; */
             }
 
         nav{
             background: linear-gradient(to right,#206a5d, #16a596);      
         }
         .btn{
-            background: #28b5b5;
+            background: #d2e69c;
         }
     </style>
 </head>
 
-<!-- navbar-dark bg-dark -->
-
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg ">
+<body >
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,8 +60,6 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -74,35 +70,30 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <!-- Page Heading -->
-                    <br>
-                    <!-- <h1 class="h3 mb-2 text-gray-800">Tables</h1> -->
-                    <a class="btn btn-primary" href="v_TambahPengaduan_A.php">Tambah Data</a>
+                    <!-- Page Heading -->
+                    <!-- <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+                    <a class="btn btn-primary" href="tambah.php">Tambah Data</a> -->
+
 
                     <br>
                     <br>
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-4" >
                         <div class="card-header py-3" id="kolom">
-                        <h6 class="m-0 font-weight-bold text-dark" >Data Pengaduan</h6>
+                            <h6 class="m-0 font-weight-bold text-dark" >Data Admin</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="example" width="100%" cellspacing="0">
-                                <!-- KOLOM TABEL -->
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Korban</th>
-                                            <th>Email</th>
-                                            <th>Alamat</th>
-                                            <th>Keluhan</th>
-                                            <th>No telp</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>Jenis Kekerasan</th>
-                                            <th>File Bukti</th>
-                                            <th>Ubah</th>
-                                            <th>Hapus</th>
+                                            <th>Email </th>
+                                            <th>Password</th>
+                                            <th>Nama</th>
+                                            <th>No Telepon</th>
+                                            <th>Bidang</th>
+                                            <th>Tindakan</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -111,29 +102,22 @@
                                     $limit = 10000; 
                                     $limit_start = ($page - 1) * $limit;
                                     $no = $limit_start + 1;
-                                    $query_mysql = mysqli_query($con, "SELECT * FROM aduan LIMIT $limit_start, $limit");
+                                    $query_mysql = mysqli_query($con, "SELECT * FROM admin LIMIT $limit_start, $limit");
                                     while($data = mysqli_fetch_array($query_mysql)){
 
                                     ?>
                                         <tr>
                                         <td ><?php echo $no++; ?></td>
+                                        <td><?php echo $data['email']; ?></td>
+                                        <td><?php echo $data['password']; ?></td>
                                         <td><?php echo $data['nama']; ?></td>
-                                        <td><?php echo $data['email']; ?></td> 
-                                        <td><?php echo $data['alamat']; ?></td>
-                                        <td><?php echo $data['keluhan']; ?></td>
-                                        <td><?php echo $data['telp']; ?></td>
-                                        <td><?php echo $data['kelamin']; ?></td>
-                                        <td><?php echo $data['jenis']; ?></td>
-                                        <td><?php echo $data['file']; ?></td>
+                                        <td><?php echo $data['no_telp']; ?></td>
+                                        <td><?php echo $data['bidang']; ?></td>
 
                                         <td>
-                                          <a class="btn text-white" href="ubah.php?id=<?php echo $data['ID']; ?>">Ubah</a>
+                                          <!-- <a class="btn btn-dark" href="ubah.php?id=<?php echo $data['id']; ?>">Ubah</a> -->
+                                          <a class="btn" href="../controller/c_hapusAdmin_A.php?id=<?php echo $data['id']; ?>">Hapus</a>
                                         </td>
-
-                                        <td>
-                                          <a class="btn text-white" href="../controller/c_hapusPengaduan_A.php?id=<?php echo $data['id']; ?>">Hapus</a>
-                                        </td>
-
                                         </tr>
                                         <?php
                                         }
@@ -143,9 +127,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
 
             </div>
             <!-- End of Main Content -->
@@ -160,26 +142,26 @@
             <!-- End of Footer -->
 
 
-<!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="uts/../vendor/jquery/jquery.min.js"></script>
+    <script src="uts/../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="uts/../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="uts/../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="uts/../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="uts/../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
+    <script src="uts/../js/demo/datatables-demo.js"></script>
     <script language="javascript">
         $(document).ready(function() {
             $('#example').dataTable( {
-                "lengthMenu": [[5,10, 25, 50, -1], [5,10, 25, 50, "All"]]
+                "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
             } );
         } );
     </script>
