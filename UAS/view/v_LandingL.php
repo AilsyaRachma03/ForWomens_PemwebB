@@ -68,9 +68,10 @@
       <h2>Jangan khawatir dimanapun kamu berada. Jika situasi tidak diinginkan terjadi, buat aduanmu sekarang!</h2>
       <p class="text-white">Masih bingung cara kerjanya ? Ikuti tutorialnya yuk</p>
       <a href="#portfolio" class="btn-get-started">Tutorial</a>
-      
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+  
+  <!-- End Hero Section -->
 
   <main id="main">
 
@@ -286,7 +287,6 @@
 
       </div>
     </section><!-- End Contact Section -->
-    
 
   </main><!-- End #main -->
 

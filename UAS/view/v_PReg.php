@@ -62,7 +62,7 @@ if(isset($_POST['register']))
         <a class="nav-link  text-white" href="v_LandingB.php">Beranda <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-    <a class="navbar-brand h4 mb-1 text-white" href="#" align="right"><img src="asset/img/for women logo.png" alt="" width="200px"></a>
+    <a class="navbar-brand h4 mb-1 text-white" href="#" align="right"><img src="for women logo.png" alt="" width="200px"></a>
   </div>
 </nav>
 
@@ -133,11 +133,13 @@ if(isset($_POST['register']))
 
     </form>
    </div>
-</div>
-<div class="px-2 bg-transparant ">
+  </div>
+  <div class="px-2 bg-transparant ">
   <marquee class="py-3" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="10" behavior="alternate">
     Welcome to our website Girls! Please register your account to enjoy our services. Be the strong women and join with us to against crime and violances
   </marquee>
 </div>
+</div>
+
 </body>
 </html>
