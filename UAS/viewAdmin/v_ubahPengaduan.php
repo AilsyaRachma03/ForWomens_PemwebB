@@ -52,6 +52,9 @@ include('../controller/c_ubahPengaduanA.php');
                     <li class="nav-item active">
                         <a class="nav-link text-white" href="../view/v_home.php">Dashboard<span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="v_AdminPengaduan.php">Kembali<span class="sr-only">(current)</span></a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -85,40 +88,40 @@ while($data = mysqli_fetch_array($result)){
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama</label>
                         <br>
-                        <input type="text" name="nama" required="" value="<?= $data['nama']; ?>" placeholder="Name">
+                        <input type="text" class="form-control" name="nama" required="" value="<?= $data['nama']; ?>" placeholder="Name">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Email</label>
                         <br>
-                        <input type="text" name="email" required="" value="<?= $data['email']; ?>" placeholder="Country Code">
+                        <input type="text" class="form-control" name="email" required="" value="<?= $data['email']; ?>" placeholder="Country Code">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Alamat</label>
                         <br>
-                        <input type="text" name="alamat" required="" value="<?= $data['alamat']; ?>" placeholder="District">
+                        <input type="text" class="form-control" name="alamat" required="" value="<?= $data['alamat']; ?>" placeholder="District">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Kronologi</label>
                         <br>
-                        <input type="text" name="keluhan" required="" value="<?= $data['keluhan']; ?>" placeholder="Population">
+                        <input type="text" class="form-control" name="keluhan" required="" value="<?= $data['keluhan']; ?>" placeholder="Population">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">No Telp</label>
                         <br>
-                        <input type="text" name="telp" required="" value="<?= $data['telp']; ?>" placeholder="Population">
+                        <input type="text" class="form-control" name="telp" required="" value="<?= $data['telp']; ?>" placeholder="Population">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">Jenis Kelamin</label>
                         <br>
-                        <input type="text" name="kelamin" required="" value="<?= $data['kelamin']; ?>" placeholder="Population">
+                        <input type="text" class="form-control" name="kelamin" required="" value="<?= $data['kelamin']; ?>" placeholder="Population">
                     </div>
 
                     <input type="hidden" name="id" value=<?php echo $_GET['id']; ?> >
-                    <input type="submit" name="perbarui" value="Ubah" class="btn btn-primary"></input>
+                    <input type="submit" name="perbarui" value="Ubah" class="btn btn-primary btn-lg btn-block" ></input>
                   </form>
                   </div>
                   <?php
@@ -126,6 +129,7 @@ while($data = mysqli_fetch_array($result)){
                   ?>
             </div>
             <!-- End of Main Content -->
+            <!-- Footer -->
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">

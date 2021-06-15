@@ -1,5 +1,5 @@
 <?php
-    include('../controller/c_TambahPengaduan_P.php');
+    include('../controller/c_KirimPesan_P.php');
 ?>
 
 <?php 
@@ -42,11 +42,11 @@ if(! isset($_SESSION['is_login']))
 
 <body id="page-top">
         <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Report Violance </a>
+        <a class="navbar-brand" href="#"> Send Message</a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -63,7 +63,7 @@ if(! isset($_SESSION['is_login']))
             </div>
         </nav>
     <br>
-    <h1> &nbsp; &nbsp; &nbsp;Report Form</h1>
+    <h1> &nbsp; &nbsp; &nbsp;Send Message</h1>
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -84,7 +84,7 @@ if(! isset($_SESSION['is_login']))
 
                 <!-- FORM  -->
                 <div class="container-fluid">
-                  <form action="v_TambahPengaduan_P.php" method="POST" enctype="multipart/form-data">
+                  <form action="v_KirimPesan_P.php" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nama Lengkap</label>
                         <input type="text" name="nama" required="" class="form-control" placeholder="Nama Lengkap">
@@ -94,45 +94,18 @@ if(! isset($_SESSION['is_login']))
                         <input type="text" name="email" required="" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Alamat</label>
-                        <input type="text" name="alamat" required="" class="form-control" placeholder="Alamat">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Kronologi</label>
-                        <input type="text" name="keluhan" required="" class="form-control input-sm" placeholder="Kronologi" style=”heigth:100px;”>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">No Telepon</label>
-                        <input type="text" name="telp" required="" class="form-control" placeholder="No Telepon">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Jenis Kelamin</label>
-                        <input type="text" name="kelamin" required="" class="form-control" placeholder="Jenis Kelamin">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Jenis Kekerasan</label><br>
-                        <input type="checkbox" name="jenis[]" value="Pemerkosaan" class=""> Pemerkosaan <br/>
-                        <input type="checkbox" name="jenis[]" value="Pelecehan" class=""> Pelecehan <br/>
-                        <input type="checkbox" name="jenis[]" value="KDRT" class=""> KDRT <br/>
-                        <input type="checkbox" name="jenis[]" value="KekerasanM" class=""> Kekerasan Mental<br/>
-                        <input type="checkbox" name="jenis[]" value="Diskriminasi" class=""> Diskriminasi <br/>
-                        <input type="checkbox" name="jenis[]" value="Pengucilan" class=""> Pengucilan <br/>
-                        <input type="checkbox" name="jenis[]" value="Penipuan" class=""> Penipuan <br/>
-                        <input type="checkbox" name="jenis[]" value="KekerasanF" class=""> Kekerasan Fisik <br/>
-                    </div>
-                    <div class="form-group">
-                        <label for="">Bukti Gambar</label>
-                        <input type="file" name="gambar">
+                        <label for="exampleInputPassword1">Isi Pesan</label>
+                        <input type="text" name="isipesan" required="" class="form-control" placeholder="Isikan Pesan">
                     </div>
 
-                    <input type="submit" name="Submit" value="Adukan" class="btn btn-primary btn-lg btn-block"></input>
+                    <input type="submit" name="Submit" value="Kirim" class="btn btn-primary btn-lg btn-block"></input>
                   </form>
 
 
                 <?php
                 if(isset($_POST['Submit'])){
          
-                  echo "<h5>Data Berhasil Ditambahkan<h5>";
+                  echo "<h5>Pesan Berhasil Dikirim</h5>";
                 }
                ?>
 

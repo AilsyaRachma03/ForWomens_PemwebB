@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(! isset($_SESSION['is_login']))
+{
+  header('location:v_login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +13,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>For Womens</title>
+  <title>For Womens | <?php echo $_SESSION['nama'];?></title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -49,8 +57,9 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="../view/v_KirimPesan_P.php">Contact</a></li>
           <li><a class="nav-link scrollto" href="../view/v_TambahPengaduan_P.php">Report</a></li>
+          <li><a class="nav-link scrollto" href="##"><?php echo $_SESSION['email'];?></a></li>
           <li><a class="nav-link scrollto" href="../controller/c_Plogout.php">Log-Out</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -62,6 +71,7 @@
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Welcome to For Women</h1>
+      <h1> <?php echo $_SESSION['nama'];?></h1>
       <h2>Jangan khawatir dimanapun kamu berada. Jika situasi tidak diinginkan terjadi, buat aduanmu sekarang!</h2>
       <p class="text-white">Masih bingung cara kerjanya ? Ikuti tutorialnya yuk</p>
       <a href="#portfolio" class="btn-get-started">Tutorial</a>

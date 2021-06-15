@@ -114,7 +114,7 @@
                         <input type="file" name="gambar">
                     </div>
 
-                    <input type="submit" name="Submit" value="Adukan" class="btn btn-primary"></input>
+                    <input type="submit" name="Submit" value="Adukan" class="btn btn-primary btn-lg btn-block"></input>
                   </form>
 
 
